@@ -1,0 +1,105 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.start{
+  background-image: linear-gradient(to right,rgb(22, 20, 20),rgb(82, 82, 198));
+    height: 70px !important;
+    padding: 20px;
+}
+.demo{
+  color: red;
+}
+table {
+  width: 100%;
+}
+.dynamic{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+
+}
+.head{
+    color: white;
+    text-align: center;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.card{
+    height: 400px;
+    width: 300px;
+}
+.card-continer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+.image{
+    height: 200px;
+    width: 200px;
+}
+.image-continer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.example-spacer {
+    flex: 1 1 auto;
+
+  }
+  .overall{
+    background: linear-gradient(rgb(41, 41, 109), rgb(193, 68, 157));
+  }
+  span{
+    color: white;
+  }
+  .icons{
+    color: white;
+  }
+  .headimg{
+ 
+  
+    padding: 30px;
+   width: 100%;
+   height: 400px;
+
+    
+  }
+  .end-continer{
+    background-image: linear-gradient(to right,rgb(22, 20, 20),rgb(82, 82, 198));
+    height: 400px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 50px;
+    color: white;
+  }
+  .foot{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  @media screen and (min-width: 300px) and (max-width:600px){
+.card-continer{
+    display: flex;
+    flex-direction: column;
+}
+.end-continer{
+  background-image: linear-gradient(to right,rgb(22, 20, 20),rgb(82, 82, 198));
+    height: 800px ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    color: white;
+  }
+  }

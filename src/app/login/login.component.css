@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.overall{
+    background-image: linear-gradient(to right,rgb(22, 20, 20),rgb(82, 82, 198));
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    color: white;
+}
+.example-form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+border-radius: 10px;
+    border: 2px solid white;
+    height: 400px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+   
+}
+.btn{
+    width: 200px;
+}
+.required{
+color: red;
+
+}
+.rrr{
+    padding-top: 30px;
+}
+.field{
+    color: white;
+}
+::placeholder{
+    color: white;
+}

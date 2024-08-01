@@ -1,0 +1,87 @@
+<div class="start">
+    <h2 class="head">our daily routain</h2>
+</div>
+
+<h3>welcome</h3><span class="demo">{{registerusersname}}</span>
+<img class="headimg" src="https://www.sapphirewebsolutions.com/wp-content/uploads/2019/09/Web-Development-Trends.jpg" alt="">
+ 
+
+
+<table mat-table [dataSource]="registerusers" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="Firstname">
+      <th mat-header-cell *matHeaderCellDef>Firstname </th>
+      <td mat-cell *matCellDef="let element"> {{element.Firstname}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="Lastname">
+      <th mat-header-cell *matHeaderCellDef> Lastname </th>
+      <td mat-cell *matCellDef="let element"> {{element.Lastname}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="Email">
+      <th mat-header-cell *matHeaderCellDef> Email </th>
+      <td mat-cell *matCellDef="let element"> {{element.Email}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+  
+
+
+
+
+<div class="card-continer">
+    <mat-card appearance="outlined"  class="card">
+        <mat-card-content class="image-continer">Frontend
+          
+            <img src="https://psdlearning.com/wp-content/uploads/2020/04/2173df74a356e89b40b18897e1b8655d.jpeg" class="image" alt="">
+            <button mat-raised-button class="btn" >Hire me</button>
+        </mat-card-content>
+      </mat-card>
+      <mat-card appearance="outlined" class="card">
+        <mat-card-content class="image-continer">Backend 
+            <img src="https://miro.medium.com/max/2400/0*hDAyhnOx767w5qma.jpg" class="image" alt="">
+            <button mat-raised-button class="btn"  >Hire me</button>
+        </mat-card-content>
+      </mat-card>
+      <mat-card appearance="outlined" class="card">
+        <mat-card-content  class="image-continer">Data analyst
+            <img src="https://demotix.com/wp-content/uploads/2019/07/web-design5-1170x658.jpg" class="image" alt="">
+<button mat-raised-button class="btn"  >Hire me</button>
+        </mat-card-content>
+      </mat-card>
+</div>
+<footer class="end-continer">
+    <div class="foot">
+        <h4>Frontend</h4>
+        <p>angular</p>
+        <p>react</p>
+        <p>javascript</p>
+        <p>html and css</p>
+    </div>
+    <div class="foot">
+        <h4>Backend</h4>
+        <p>nodejs</p>
+        <p>mongodb</p>
+        <p>express.js</p>
+       
+    </div>
+    <div class="foot">
+        <h4>Data analyst</h4>
+        <p>python</p>
+        <p>data scientist</p>
+       
+    </div>
+    </footer>

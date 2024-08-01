@@ -1,0 +1,29 @@
+<div class="overall">
+    <form class="example-form" [formGroup]="loginform">
+        <mat-form-field class="example-full-width">
+          <mat-label class="field">email</mat-label>
+          <input  class="field" [(ngModel)]="login.email" matInput placeholder=" enter your email"formControlName="email" name="email" >
+          <small *ngIf="email.invalid && email.dirty ||email.touched" class="required">
+            <div class="rrr" *ngIf="email.errors?.['required']">email is required</div>
+            <div class="rrr" *ngIf="email.errors?.['email']">email is required</div>
+                      </small>
+        </mat-form-field>
+      
+
+        <mat-form-field class="example-full-width">
+          <mat-label  class="field">Password</mat-label>
+          <input  class="field" [(ngModel)]="login.password" matInput placeholder="enter your Password"  type="password" formControlName="password" name="password">
+          <small *ngIf="password.invalid && password.dirty ||password.touched" class="required">
+            <div class="rrr" *ngIf="password.errors?.['required']">password is required</div>
+                      </small>
+        </mat-form-field>
+      
+        <button class="btn" mat-raised-button (click)=" donelogin()" >Login</button>
+       <!-- <a href="" routerLink="register"> click here to Registered</a> -->
+       <a class="link" [routerLink]="['/register']">clich here to register</a>
+
+      </form>
+
+     
+     
+</div>
